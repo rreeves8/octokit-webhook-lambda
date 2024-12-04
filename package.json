@@ -1,0 +1,24 @@
+{
+  "name": "octokit-webhook-lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "Magnus Reeves",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@octokit/webhooks": "^13.4.1",
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.146",
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
