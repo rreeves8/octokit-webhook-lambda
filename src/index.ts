@@ -9,7 +9,7 @@ import type {
   APIGatewayProxyStructuredResultV2,
 } from "aws-lambda";
 
-export async function createLambdaAPIGatewayMiddleware(
+export async function createLambdaHandler(
   webhooks: Webhooks,
   request: APIGatewayProxyEventV2,
   options: Omit<MiddlewareOptions, "path">
