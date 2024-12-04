@@ -12,8 +12,11 @@ import type {
 export async function createLambdaHandler(
   webhooks: Webhooks,
   request: APIGatewayProxyEventV2,
-  options: Omit<MiddlewareOptions, "path">
+  options?: Omit<MiddlewareOptions, "path">
 ): Promise<APIGatewayProxyStructuredResultV2> {
+  if (!options) {
+    options = {};
+  }
   if (!options.log) {
     options.log = console;
   }
